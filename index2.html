@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title></title>
+	<style type="text/css">
+	 .progreso{
+	 	background: #6ff8a4;
+	 	color: #222020;
+	 	margin: 5px;
+	 	padding: 10px;
+	 	font-size: 30px;
+	 }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Qué deparara el futuro?</h1>
+	</header>
+	<article>
+		
+			<div class="progreso" id="salida">	
+			
+		<h2>Como ve la sociedad a Elon Musk</h2>
+        <p>En este video podemos apreciar como es que la sociedad trata
+            Musk ya que lo tratan el Tony Stark de la vida real, ya que 
+            el nos da esperanza en la humanidad por medio de la ciencia</p>
+            <img src="elon.jpg" height="200" alt="">
+	
+	</section>	
+	<section>	
+		<div class="progreso" id="sali">
+		<h2>El futuro de marte</h2>
+        <img src="fumar.jpg" height="200" alt="">
+        <p>Sin duda el hombre que es tendencia en la actualidad, donde sus proyectos cambiaran el 
+            rumbo de la historia. Pero ya se sabía en 2007 que estaba haciendo cohetes que llevarian
+             a marte, pero nadie creyo en él ni que tuviera exito, ahora es la envidia de todos, 
+             sobre todo con la industria del petróleo.
+			</div>
+    </article>
+        </section>
+<script type="text/javascript">
+	
+	 function ObtAleatorioEntero(min,max){
+	 	return Math.round(Math.random()*(1 + max-min)+min);
+	 }
+	 var futuro = ObtAleatorioEntero(2070,2078)
+	 if (futuro == 2077){
+	    Simplificar()
+		msg = futuro + ' is a Prime number';
+        imageshown = "elon.jpg"
+		
+		document.getElementById('progreso').innerHTML = `<a href='bio.html'>biografía</a>`;
+    }else if(futuro == 2080){
+		/*document.getElementById("salida").innerHTML = "el año puede ser: " + futuro;*/
+		
+	 }
+
+document.getElementById("salida").innerHTML ="El año es : " + futuro;
+
+function Simplificar(){
+var progreso = document.getElementById('progreso');
+  var img = progreso.nextElementSibling;
+
+  progreso.textContent = msg;
+  img.src = imageshown;
+}
+Simplificar()
+</script>
+
+</body>
+</html>

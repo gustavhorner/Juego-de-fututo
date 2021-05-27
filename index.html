@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <header>
+      
+<script>
+function rand(n){
+
+ return(Math.floor(Math.random() * n + 1 ));
+}
+//guardaamos en el arreglo
+var cambia_imagen = new Array();
+cambia_imagen[0] = "elon.jpg";
+cambia_imagen[1] = "fumar.jpg";
+cambia_imagen[2] = "musk.jpg" ;
+cambia_imagen[3] = "cuantica.png";
+cambia_imagen[4] = "cuantica2.png";
+cambia_imagen[5] = "spacex.png";
+cambia_imagen[6] = "mask.jpg";
+cambia_imagen[7] = "wonder3.jpg";
+cambia_imagen[8] = "tenet.jpg";
+cambia_imagen[9] = "9.jpg";
+
+
+function cambiar(){
+     document.getElementById("ia").src = cambia_imagen[rand(10)-1];
+}
+document.write(cambia_imagen[rand])
+</script>
+<button onclick="cambiar();">Futuro mas probable</button></p>
+
+
+<body onload="cambiar()">
+
+<p><img id="ia" alt="Imagen aleatoria" src="5.jpg" width="70%" height="auto" /></p>
+
+
+
+
+    </header>
+</head>
+<body>
+    
+</body>
+</html>
